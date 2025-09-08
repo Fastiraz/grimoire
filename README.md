@@ -4,7 +4,7 @@
 
 <div align="center">
   <h1><code>The Grimoire</code></h1>
-  <p>This is the [Neko](https://github.com/Fastiraz/neko)'s documentation.</p>
+  <p>This is the <a href="https://github.com/Fastiraz/neko">Neko</a>'s documentation.</p>
 </div>
 
 ---
