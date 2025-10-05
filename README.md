@@ -4,7 +4,7 @@
 
 <div align="center">
   <h1><code>The Grimoire</code></h1>
-  <p>This is the <a href="https://github.com/Fastiraz/neko">Neko</a>'s documentation.</p>
+  <p>This is the <a href="https://github.com/Fastiraz/akio">Akio</a>'s documentation.</p>
 </div>
 
 ---
@@ -54,13 +54,13 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 ---
 
 ```sh
-bunx create-docusaurus@latest neko --typescript --package-manager bun
+bunx create-docusaurus@latest akio --typescript --package-manager bun
 ```
 
 ✔ Select a template below... › classic (recommended)
 [INFO] Creating new Docusaurus project...
 [INFO] Installing dependencies with bun...
-[SUCCESS] Created neko.
+[SUCCESS] Created akio.
 [INFO] Inside that directory, you can run several commands:
 
   `bun start`
@@ -77,7 +77,7 @@ bunx create-docusaurus@latest neko --typescript --package-manager bun
 
 We recommend that you begin by typing:
 
-  `cd neko`
+  `cd akio`
   `bun start`
 
 Happy building awesome websites!

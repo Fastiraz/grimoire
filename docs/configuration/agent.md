@@ -6,7 +6,7 @@ description: How to configure the autonomous agent.
 
 # Agent Configuration
 
-The Neko agent relies on several models and services, which can be configured using a `.env` file at the project root or wherever your backend is initialized.
+The Akio agent relies on several models and services, which can be configured using a `.env` file at the project root or wherever your backend is initialized.
 
 This file allows you to customize which models are used, where local data is stored, and how the agent behaves.
 
@@ -28,8 +28,8 @@ BROWSER_USE_LOGGING_LEVEL=info
 ANONYMIZED_TELEMETRY=false
 
 # === Paths ===
-VECTOR_DB_PATH=/home/user/neko/backend/vectordb
-DATASETS_PATH=/home/user/neko/backend/datasets
+VECTOR_DB_PATH=/home/user/akio/backend/vectordb
+DATASETS_PATH=/home/user/akio/backend/datasets
 ````
 
 ---

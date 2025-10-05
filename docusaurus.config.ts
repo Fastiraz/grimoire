@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
   title: 'The Grimoire',
-  tagline: 'Neko, your red team assistant who helps you break things.',
+  tagline: 'Akio, your red team assistant who helps you break things.',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -24,7 +24,7 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'fastiraz', // Usually your GitHub org/user name.
-  projectName: 'neko', // Usually your repo name.
+  projectName: 'akio', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -88,7 +88,7 @@ const config: Config = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/fastiraz/neko',
+          href: 'https://github.com/fastiraz/akio',
           label: 'GitHub',
           position: 'right',
         },
@@ -128,12 +128,12 @@ const config: Config = {
             // },
             {
               label: 'GitHub',
-              href: 'https://github.com/fastiraz/neko',
+              href: 'https://github.com/fastiraz/akio',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Neko, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Akio, Inc. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

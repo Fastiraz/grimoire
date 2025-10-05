@@ -8,7 +8,7 @@ description: Learn how to contribute.
 
 ## Getting Started
 
-Welcome to the Neko project! We're excited to have you contribute. This guide will walk you through everything you need to know to make meaningful contributions to our project.
+Welcome to the Akio project! We're excited to have you contribute. This guide will walk you through everything you need to know to make meaningful contributions to our project.
 
 ### First Time Contributing?
 
@@ -104,4 +104,4 @@ If you have any questions about contributing, feel free to:
 - Open an issue for discussion
 - Reach out to the maintainers
 
-Thank you for contributing to Neko! 🐱
+Thank you for contributing to Akio! 🐱

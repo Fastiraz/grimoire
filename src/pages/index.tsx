@@ -21,7 +21,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/category/getting-started">
-              🚀 Run Neko now!
+              🚀 Run Akio now!
           </Link>
         </div>
       </div>
@@ -34,7 +34,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title={`🐈 ${siteConfig.title}`}
-      description="Neko. Your AI red team assistant who helps you break things.">
+      description="Akio. Your AI red team assistant who helps you break things.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

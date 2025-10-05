@@ -1,18 +1,18 @@
 ---
 sidebar_position: 3
 title: Installation
-description: How to install and run the Neko platform using pipx or from source
+description: How to install and run the Akio platform using pipx or from source
 ---
 
 # Installation
 
-Neko is built using the Python package and project manager [uv](https://docs.astral.sh/uv/). You can choose between a **pipx installation (recommended)** or install from source if you want full control.
+Akio is built using the Python package and project manager [uv](https://docs.astral.sh/uv/). You can choose between a **pipx installation (recommended)** or install from source if you want full control.
 
 ---
 
 ## Prerequisites
 
-Neko use Ollama as a LLM provider by default so make sure it's installed.
+Akio use Ollama as a LLM provider by default so make sure it's installed.
 
 - [Ollama](https://ollama.com/)
 
@@ -22,7 +22,7 @@ You can install Ollama using:
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-You can also install Ollama on a different machine and edit the `llm_provider_base_url` object in the config file at `~/.neko/settings.json`.
+You can also install Ollama on a different machine and edit the `llm_provider_base_url` object in the config file at `~/.akio/settings.json`.
 
 ## Installation with pipx (recommended)
 
@@ -36,20 +36,20 @@ brew install pipx # On macOS
 # Ensure pipx is in PATH and reload the shell
 pipx ensurepath && exec $SHELL
 
-# Install neko
-pipx install neko
+# Install akio
+pipx install akio
 ```
 
 ## Installation from source
 
 ```bash
-git clone https://github.com/Fastiraz/neko.git
-cd neko
+git clone https://github.com/Fastiraz/akio.git
+cd akio
 
 uv build
 uv venv
 uv pip install dist/*.whl
-uv run -- neko help
+uv run -- akio help
 ```
 
 ---

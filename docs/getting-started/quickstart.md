@@ -6,6 +6,6 @@ description: Quickstart
 
 # Quickstart
 
-This quickstart guide shows you how to set up and deploy your Neko instance locally.
+This quickstart guide shows you how to set up and deploy your Akio instance locally.
 
-After completing this guide, you will have a local instance of Neko ready to hack!
+After completing this guide, you will have a local instance of Akio ready to hack!
