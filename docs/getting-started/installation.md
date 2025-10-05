@@ -1,66 +1,56 @@
 ---
 sidebar_position: 3
 title: Installation
-description: How to install and run the Neko platform using Docker or from source
+description: How to install and run the Neko platform using pipx or from source
 ---
 
 # Installation
 
-Neko is built using various technologies, but everything is **containerized** for ease of deployment. You can choose between a **container-based setup (recommended)** or install from source if you want full control.
+Neko is built using the Python package and project manager [uv](https://docs.astral.sh/uv/). You can choose between a **pipx installation (recommended)** or install from source if you want full control.
 
 ---
 
-## 🚀 Installation with Containers (Recommended)
+## Prerequisites
 
-The fastest way to get started is with Docker.
+Neko use Ollama as a LLM provider by default so make sure it's installed.
 
-### Prerequisites
+- [Ollama](https://ollama.com/)
 
-Make sure you have the following installed:
+You can install Ollama using:
 
-- [Docker](https://www.docker.com/)
-- [Docker Compose](https://docs.docker.com/compose/)
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+```
 
-### Start All Services
+You can also install Ollama on a different machine and edit the `llm_provider_base_url` object in the config file at `~/.neko/settings.json`.
 
-From the project root:
+## Installation with pipx (recommended)
 
-```sh
-docker-compose up
-````
+The fastest way to get started is with `pipx`.
 
-This command launches all major components defined in `compose.yaml`, including:
+```bash
+# Install pipx
+apt install pipx # On Linux
+brew install pipx # On macOS
 
-* Backend (API, MCP, autonomous agents, vector DB, knowledge base)
-* Frontend (ReactApp for UI)
-* PocketBase (auth/db)
-* ComfyUI (visual/AI tools)
-* Hacking environment
-* Ollama (LLM provider)
+# Ensure pipx is in PATH and reload the shell
+pipx ensurepath && exec $SHELL
 
-> 💡 Modify the `*.dockerfile` files to customize each service.
+# Install neko
+pipx install neko
+```
 
-Once running, check the default URLs (typically `http://localhost:3000`, `http://localhost:8000`, etc. based on your `compose.yaml`).
+## Installation from source
 
----
+```bash
+git clone https://github.com/Fastiraz/neko.git
+cd neko
 
-## 🧩 Installation from Source (Advanced)
-
-Use this method if you want to run everything directly without containers.
-
-### Step 1: Install System Dependencies
-
-You'll need:
-
-- **[Python 3.12+](https://www.python.org/)**
-- **[uv](https://github.com/astral-sh/uv)**: An extremely fast Python package, environment and project manager, written in Rust.
-- **[bun](https://bun.sh/)**: Bun is a fast JavaScript
-all-in-one.
-- **[Ollama](https://ollama.com/)**: An LLM provider.
-- **[Docker](https://www.docker.com/)**: A container manager.
-- **[ComfyUI](https://www.comfy.org/)**: A powerful open source node-based
-application for generative AI.
-- **[PocketBase](https://pocketbase.io/)**: A Backend as a Service.
+uv build
+uv venv
+uv pip install dist/*.whl
+uv run -- neko help
+```
 
 ---
 
