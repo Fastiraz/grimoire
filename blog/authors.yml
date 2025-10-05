@@ -1,5 +1,5 @@
 fastiraz:
-  name: Sabri Mechlaoui
+  name: Fastiraz
   title: Co-founder 0xCat and principal maintainer
   url: https://fastiraz.github.io/whoami/
   image_url: https://avatars.githubusercontent.com/u/92016718?v=4
@@ -24,18 +24,6 @@ oxyde:
     linkedin: Alexy DA COSTA
     github: oxydev2
 
-flo:
-  name: Florian Papinutto
-  title: R&D engineer @ 0xCat
-  url: https://github.com/flo602/
-  image_url: https://cdn.discordapp.com/avatars/836164089322668062/6ca2d15968ccc0d49f40714c54e5760c.webp
-  page:
-    # customize the url of the author page at /blog/authors/<permalink>
-    permalink: '/all-flo-articles'
-  socials:
-    linkedin: Florian Papinutto
-    github: flo602
-
 kuba:
   name: Kuba Stanislawski
   title: Frontend developer @ 0xCat
@@ -48,3 +36,14 @@ kuba:
     x: KubaStanislaws1
     linkedin: Kuba Stanislawski
     github: Kuba93220
+
+ktoad:
+  name: ktoad
+  title: DevOps
+  url: https://github.com/ktoad33
+  image_url: https://avatars.githubusercontent.com/u/192902715?v=4
+  page: # true
+    # customize the url of the author page at /blog/authors/<permalink>
+    permalink: '/all-ktoad-articles'
+  socials:
+    github: ktoad33
